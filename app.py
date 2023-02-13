@@ -31,3 +31,6 @@ def index():
     result = request.args.get("result")
     return render_template("chatroom.html", result=result)
 
+if __name__ == "__main__":
+    
+    app.run(host='0.0.0.0')
